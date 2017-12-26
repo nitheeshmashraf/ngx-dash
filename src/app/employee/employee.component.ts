@@ -11,6 +11,7 @@ import { DataService } from '../data.service';
 })
 export class EmployeeComponent implements OnInit {
 
+goals=[];
 	empName:string;
   constructor(private route: ActivatedRoute, private router: Router, private _data: DataService) { 
     this.route.params.subscribe(res => this.empName=res.name);
